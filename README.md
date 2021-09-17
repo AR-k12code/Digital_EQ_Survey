@@ -60,7 +60,7 @@ The first value before the | is the validation and is what goes in the file. Aft
 >DP | District Provided  
 >OT | Other  
 >PL | Personal  
->42 | Learning Device
+>42 | Learning Device  
 >1 | Desktop Computer  
 >2 | Laptop Computer  
 >3 | Tablet  
