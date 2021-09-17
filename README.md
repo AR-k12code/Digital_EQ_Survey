@@ -88,7 +88,7 @@ The first value before the | is the validation and is what goes in the file. Aft
 > N | No-Unable to access Internet  
 > S | Sometimes- Regularly experience internet interruptions  
 > Y | Yes- Few or No internet interruptions  
-> 47 | Internet Bzarrier
+> 47 | Internet Barrier  
 > AFF | Not Affordable  
 > NA | Not Applicable  
 > AVL | Not Available  
