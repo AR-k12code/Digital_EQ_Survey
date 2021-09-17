@@ -56,7 +56,7 @@ The first value before the | is the validation and is what goes in the file. Aft
 >2 | Virtual/Remote Learning  
 >3 | Hybrid/Blended learning  
 >4 | NA No Show/No Activity  
->40 | Device Access Source
+>40 | Device Access Source  
 >DP | District Provided  
 >OT | Other  
 >PL | Personal  
