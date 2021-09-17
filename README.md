@@ -28,7 +28,8 @@ Eschool Upload for Digital Equity survey; all fields
 district,Student_ID,Screen_Number,Field_number,List_Sequence,Field_Value
 >sample  
 >405000,123456,102,38,1,Y
-
+  
+Each Question and entry will have its own line if you do all 9 questions for a student you will need 9 lines per student.  
 #### Screen_Number
 For these specific questions they should all be on Screen 102
 
