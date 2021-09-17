@@ -1,4 +1,4 @@
-### Digital_EQ_Suvrey
+### Digital_EQ_Survey
 Eschool Upload for Digital Equity survey; all fields
 
 ## Eschool Upload Definition fields:
