@@ -17,7 +17,9 @@ $DefaultDeviceSerialNumber = "NotProvided" #View ReadMe for specifics for valid 
 $DefaultInternetType = "9" #Set to unknown if this is not provided, view readme for valid answers
 $DefaultInternetPerformance = "N" #View ReadMe for specifics for valid answers.
 $DefaultInternetBarrier = "NA" #View ReadMe for specifics for valid answers.
+$LogLoc = "c:\scripts\logs\DigEQ\$(Get-date -format yyyy-MM-dd-HH-mm-ss).log"
 
+Start-Transcript -path $LogLoc
 function RemoveSpecials ([String]$in)
 {
  $in = $in -replace("[^0-9]","")
@@ -30,13 +32,13 @@ Foreach ($st in $students){
 if ($stid.length -lt $StuIdLength){
     $stid = (Get-ADUser ($st.'Email Address').Split("@")[0] -Properties $ADstudentID).$ADstudentID
 }
-
+$stid = $stid.trim()
 
     Write-host Creating rows for $stid
     For ($i=3;$i -le 11;$i++){
-    $stq = ($stu.psobject.properties.value[$i]).split("|")[0].trim()
-    $stan = ($stu.psobject.properties.value[$i]).split("|")[1].trim()
-    if ($stan = " "){
+    $stq = ($st.psobject.properties.value[$i]).split("|")[0].trim()
+    $stan = ($st.psobject.properties.value[$i]).split("|")[1].trim()
+    if ($stan.length -eq "0"){
         Write-Host "Blank answer using default value for $stq"
         Switch ($stq){
             "38" {$stan = $DefaultInternet}
@@ -57,3 +59,4 @@ if ($stid.length -lt $StuIdLength){
     }
 
     $rows |Out-File $outputfileloc -Encoding ascii
+    Stop-Transcript
