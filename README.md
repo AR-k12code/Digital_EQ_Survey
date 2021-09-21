@@ -48,9 +48,9 @@ Mapping the fields to the questions is the "tricky Part here is the cheatsheet I
 
 ##### Field_Number Validations:
 The first value before the | is the validation and is what goes in the file. After the | is the human readable descriptor.  
->38 | Internet Access  
->Y | Yes  
->N | No  
+>- 38 | Internet Access  
+>   - Y | Yes  
+>   - N | No  
 >39 | Student Instructional Option  
 >1 | Onsite/Traditional Learning  
 >2 | Virtual/Remote Learning  
@@ -92,4 +92,7 @@ The first value before the | is the validation and is what goes in the file. Aft
 > AFF | Not Affordable  
 > NA | Not Applicable  
 > AVL | Not Available  
-> OTR | Other
+> OTR | Other  
+  
+# Google form that the powershell is based upon: Only edit descriptions!  
+  [Make a copy](https://docs.google.com/forms/d/1_4XnfabA0t1AFEkRAJJoB_CILA_CQoeO8ljQulunBMc/copy)
