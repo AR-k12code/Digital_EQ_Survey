@@ -48,51 +48,51 @@ Mapping the fields to the questions is the "tricky Part here is the cheatsheet I
 
 ##### Field_Number Validations:
 The first value before the | is the validation and is what goes in the file. After the | is the human readable descriptor.  
->- 38 | Internet Access  
->   - Y | Yes  
->   - N | No  
->39 | Student Instructional Option  
->1 | Onsite/Traditional Learning  
->2 | Virtual/Remote Learning  
->3 | Hybrid/Blended learning  
->4 | NA No Show/No Activity  
->40 | Device Access Source  
->DP | District Provided  
->OT | Other  
->PL | Personal  
->42 | Learning Device  
->1 | Desktop Computer  
->2 | Laptop Computer  
->3 | Tablet  
->4 | Chromebook  
->5 | SmartPhone  
->6 | None  
->7 | Other  
->43 | Shared Device  
->N | Not Shared  
->S | Shared  
->U | Unknown  
->44 | Device Serial Number  
->Varchar field; I suggest keeping it to under ~200 characters I haven't double checked this on the SQL table directly.  
->45 | Internet Type  
->1 | Residential Broadband  
->2 | Cellular Network  
->3 | Hot Spot  
->4 | Community provided Wi-Fi  
->5 | Satellite  
->6 | Dial-up  
->7 | Other  
->8 | None  
->9 | Unknown  
->46 | Internet Performance  
-> N | No-Unable to access Internet  
-> S | Sometimes- Regularly experience internet interruptions  
-> Y | Yes- Few or No internet interruptions  
-> 47 | Internet Barrier  
-> AFF | Not Affordable  
-> NA | Not Applicable  
-> AVL | Not Available  
-> OTR | Other  
+- 38 | Internet Access  
+   - Y | Yes  
+   - N | No  
+- 39 | Student Instructional Option  
+  - 1 | Onsite/Traditional Learning  
+  - 2 | Virtual/Remote Learning  
+  - 3 | Hybrid/Blended learning  
+   - 4 | NA No Show/No Activity  
+- 40 | Device Access Source  
+    - DP | District Provided  
+    - OT | Other  
+    - PL | Personal  
+- 42 | Learning Device  
+    - 1 | Desktop Computer  
+    - 2 | Laptop Computer  
+    - 3 | Tablet  
+    - 4 | Chromebook  
+    - 5 | SmartPhone  
+    - 6 | None  
+    - 7 | Other  
+- 43 | Shared Device  
+    - N | Not Shared  
+    - S | Shared  
+    - U | Unknown  
+- 44 | Device Serial Number  
+    - Varchar field; I suggest keeping it to under ~200 characters I haven't double checked this on the SQL table directly.  
+- 45 | Internet Type  
+    - 1 | Residential Broadband  
+    - 2 | Cellular Network  
+    - 3 | Hot Spot  
+    - 4 | Community provided Wi-Fi  
+    - 5 | Satellite  
+    - 6 | Dial-up  
+    - 7 | Other  
+    - 8 | None  
+    - 9 | Unknown  
+- 46 | Internet Performance  
+    - N | No-Unable to access Internet  
+    - S | Sometimes- Regularly experience internet interruptions  
+    - Y | Yes- Few or No internet interruptions  
+- 47 | Internet Barrier  
+    - AFF | Not Affordable  
+    - NA | Not Applicable  
+    - AVL | Not Available  
+    - OTR | Other  
   
 # Google form that the powershell is based upon: Only edit descriptions!  
   [Make a copy](https://docs.google.com/forms/d/1_4XnfabA0t1AFEkRAJJoB_CILA_CQoeO8ljQulunBMc/copy)
