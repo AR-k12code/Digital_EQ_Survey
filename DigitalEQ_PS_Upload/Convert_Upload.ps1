@@ -36,8 +36,13 @@ $stid = $stid.trim()
 
     Write-host Creating rows for $stid
     For ($i=3;$i -le 11;$i++){
+    if ($i -eq "8"){
+        $stq = "44"
+        $stan =   $stan = ($st.psobject.properties.value[$i]).trim()
+    }else{
     $stq = ($st.psobject.properties.value[$i]).split("|")[0].trim()
     $stan = ($st.psobject.properties.value[$i]).split("|")[1].trim()
+    }
     if ($stan.length -eq "0"){
         Write-Host "Blank answer using default value for $stq"
         Switch ($stq){
